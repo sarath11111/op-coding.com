@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 100px auto 0px auto;
+        }
+        #c::before{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+
+        }
+        #c::after{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+            accent-color: purple;
+        }
+        #c{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+            accent-color: purple;
+        }
+        #c1::before{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+
+        }
+        #c1::after{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+            accent-color: purple;
+        }
+        #c1{
+            height: 20px;
+            width: 20px;
+            background-color: green;
+            accent-color: purple;
+            border-color: blue;
+            border: 10px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+         <br>
+        <label for="c">
+            <input type="radio" name="in" id="c">hh<br>
+            <input type="checkbox" name="in" id="c"> <br>
+        </label>
+        <label for="c1">
+            <input type="radio" name="in" id="c1">hh <br>
+            <input type="checkbox" name="in" id="c1"><br>
+        </label>
+        
+    </div>
+</body>
+</html>

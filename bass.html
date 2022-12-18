@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .bass{
+        height: 500px;
+        width: 50%;
+      
+   transform-style: preserve-3d;
+        background-color: red;
+     
+        
+      }
+      .bass::after{
+        content: '';
+        left: 0;
+        bottom: 0;
+        position: absolute;
+        height: 0.17rem;
+        width: 100%;
+        background-color: blue;
+        
+      }
+      .bass:hover{
+        animation: change 10s infinite linear;
+        transform: scale(2,1);
+        transition: background 2s;
+        cursor: pointer;
+
+        
+        
+        
+
+ }
+ .bass:hover::after{
+        background: red;
+        transform: scale(1,1);
+        transition: background 2s ease;
+        cursor: pointer;
+        animation: change 10s infinite linear;
+        color: #00b894;
+        font-size: 50px;
+        text-align: center;
+        top: 0;
+        font-family: cursive;
+        font-weight: 900;
+        -webkit-text-fill-color: black;
+
+ }
+ .bass:hover::before{
+    animation: change 10s infinite linear;
+ }
+
+ @keyframes change{
+    0%{
+        content: "hello";
+        text-align: left;
+        background:  green;
+        
+        
+    }
+    10%{
+        content: "hello1";
+        text-align: right;
+    }
+    20%{
+        content: "hello2";
+        text-align: left;
+    }
+    30%{
+        content: "hello3";
+        text-align: right;
+    }
+    40%{
+        content: "hello4";
+        text-align: left;
+    }
+    50%{
+        content: "hello5";
+        text-align: right;
+    }
+    60%{
+        content: "hello6";
+        text-align: left;
+    }
+    70%{
+        content: "hello7";
+        text-align: right;
+    }
+    80%{
+        content: "hello8";
+        text-align: left;
+    }
+    90%{
+        content: "hello9";
+        text-align: right;
+    }
+    100%{
+        content: "hello10";
+        text-align: center;
+        
+    }
+    
+ }
+       
+    </style>
+</head>
+<body>
+    <center>
+        <div class="bass">
+            <br>
+            
+
+        </div>
+    </center>
+    <input type="color" name="" id="">
+</body>
+</html>

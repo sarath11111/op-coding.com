@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html g="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 30%;
+            min-width: 20%;
+            height: 320px;
+            padding: 10px 10px 10px  ;
+            background-color: rgba(0, 0, 0, 0.342);
+            border: 2px solid black;
+            border-radius: 6px;
+            box-shadow: 0px 15px 10px 2px black ;
+            margin: 100px auto 0px auto;
+            color: whitesmoke;
+            font-family: cursive;
+         position: -webkit-sticky;
+         display: grid;
+         
+        }
+        #lan{
+            width: 210px;
+            border: 1px solid black;
+            text-shadow: 0 0 0.8px;
+            font-family: cursive;
+         
+           
+        }
+       
+        option{
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid black;
+            text-shadow: 0 0 0.8px;
+            font-family: cursive;
+        }
+        legend{
+            text-align: center;
+            font-family: cursive;
+            
+        }
+        #ms{
+            color: red;
+            background-color: red;
+        }
+        div{
+           
+            color: black;
+            font-size: larger;
+            font-weight: 500;
+            font-family: cursive;
+           
+        }
+        #input{
+            padding: 5px 5px 5px 5px;
+            border: 1px solid black;
+            text-shadow: 0 0 0.8px;
+            position: relative;
+            font-family: cursive;
+           
+            
+        }
+        #input:valid{
+            background-color: rgb(104, 250, 153);
+            border: 1px solid red;
+        }
+        .input{
+            padding: 5px 5px 5px 5px;
+            border: 1px solid black;
+            text-shadow: 0 0 0.8px;
+            position: relative;
+            font-family: cursive;
+           
+            
+        }
+        .input:valid{
+            background-color: rgb(104, 250, 153);
+            border: 1px solid red;
+        }
+        input:focus-visible{
+            border: 3px solid red ;
+        }
+        button{
+            text-align: center;
+            margin:  auto 0px auto;
+            width: 110px;
+            height: 40px;
+            background-color: orange;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+            color: black;
+            position: absolute;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+            font-size: large;
+            font-family: cursive;
+            cursor: pointer;
+        }
+        button:active{
+            cursor: pointer;
+            width: 90px;
+            height: 35px;
+        }
+       
+        textarea{
+            height: 30px;
+            max-width: 300px;
+            min-width: 100px;
+            max-height: 40px;
+            min-height: 20px;
+            border: 1px solid black;
+            text-shadow: 0 0 0.8px;
+            width: 210px;
+            font-family: cursive;
+            
+        }
+        body{
+         background: url("op logo.jpg");
+         background-size: 100%;
+         background-repeat: no-repeat;
+         
+        }
+       #male:checked ~ #label{
+        box-shadow: 0 0 5px red;
+        background-color: red;
+        color: #000;
+       }
+       #male{
+        background-color: red;
+        accent-color: blue;
+       }
+       #male:hover{
+        accent-color: blue;
+       }
+       #female:checked ~ #label{
+        box-shadow: 0 0 5px red;
+        background-color: red;
+        color: #000;
+       }
+       #female{
+        background-color: red;
+        accent-color: red;
+       }
+       #female:hover{
+        accent-color: red;
+       }
+       
+        #num{
+            width: 195px;
+          
+        }
+        textarea:focus-visible{
+            border: 1px solid red;
+            
+        }
+        input[type='password']:in-range{
+            background-color: pink;
+            border:1px solid red ;
+          
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Enter your details</legend>
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            Name:
+                        </td>
+                        <td>
+                            <input type="text" name="" id="input" class="name" placeholder="Enter your name" required spellcheck="false" > <br>
+                        </td>
+                    </tr>
+                    <tr>
+                       <td>
+                        Email:
+                    </td> 
+                       <td>
+                        <input type="email" name="" id="input" class="email" placeholder="someone@example.com" required>
+                    </td>
+                    </tr>
+                   <tr>
+                    <td>
+                        Password:
+
+                    </td>
+                    <td>
+                        <input type="password" name="" id="input" class="password" required placeholder="password"  min="6">
+                    </td>
+                   </tr>
+                   
+                   <tr>
+                    <td>
+                        Phno:
+                    </td>
+                    <td>
+                        <input required type="number" name="" id="input" class="phno" placeholder="enter your phone number"  max="99999999999" ">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        
+                            <label for="male" id="label">
+                                <input type="radio" required name="male" id="male" value="boy" class="boy">Male
+                            
+                            
+                        </label>
+                     
+                        <label for="female" id="label2">
+                            <input type="radio" name="male" required id="female" value="girl" class="girl">Female
+                        </label>
+                        
+                       
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        language:
+                    </td>
+                    <td>
+                       <select name="" id="lan" >
+                        <option value="" id="" role="alert"></option>
+                        <option value="" id="">Telugu</option>
+                        <option value="" id="">Tamil</option>
+                        <option value="" id="">Hindi</option>
+                        <option value="" id="">Kannada</option>
+                        <option value="" id="">Marathi</option>
+                        <option value="" id="">Punjabi</option>
+                        <option value="" id="">Gujarathi</option>
+                        <option value="" id="">Malalayam</option>
+                        <option value="" id="">Odia</option>
+                        <option value="" id="">English</option>
+                        
+                       </select>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td>
+                        Ambition:
+                    </td>
+                    <td>
+                        <textarea name="" class="goal" id="input" cols="30" rows="10" required></textarea>
+                    </td>
+                   </tr>
+                   
+                   
+                    <td class="td">
+                        <button type="submit" onclick="submit()">Submit</button>
+                    </td>
+                   
+                </table>
+            </form>
+        </fieldset>
+    </div>
+</body>
+<script>
+    
+</script>
+</html>

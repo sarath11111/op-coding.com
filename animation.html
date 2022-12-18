@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            transition: width 2s,height 4s,border-radius 4s,background 4s;
+            animation: hello 5s ease infinite;
+        }
+        @keyframes hello{
+            0%{
+                background-color: blue;
+                width: 200px;
+               
+            }
+            100%{
+                  width: 100%;
+                height: 100px;
+                
+            }
+            
+            
+        }
+        .rotater{
+           
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: monospace;
+            background: black;
+            color: white;
+            overflow: hidden;
+        }
+        .ring{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+             animation: ring 2s linear infinite;
+
+        }
+        @keyframes ring{
+            0%{
+                transform:  rotate(0deg);
+                box-shadow: 1px 5px 2px #e65c00;
+            }
+            50%{
+                transform:  rotate(180deg);
+                box-shadow: 1px 5px 2px #18b201;
+            }
+            100%{
+                transform:  rotate(360deg);
+                box-shadow: 1px 5px 2px #0456c8;
+            }
+        }
+        .ring::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+            border-radius: 50%;
+        }
+        span{
+            color: #737373;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 200px;
+            animation: text 3s ease-in-out linear infinite;
+        }
+        @keyframes text{
+            50%{
+                color: black;
+            }
+        }
+        .disco{
+            height: 200px;
+            width: 200px;
+            background: transparent;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            animation: animation 0.5s  infinite ease;
+            float: left;
+            overflow: none;
+            overflow: hidden;
+        }
+        .disco1{
+            height: 100px;
+            width: 200px;
+            background: transparent;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            animation: animation1 0.5s  infinite ease;
+            float: left;
+            overflow: none;
+            overflow: hidden;
+        }
+        @keyframes animation {
+            0%{
+                background-color: red;
+            }
+            10%{
+                background-color: green;
+            }
+            11%{
+                height: 600px;
+                background-color: green;
+            }
+            20%{
+                background-color: blue;
+            }
+            20%{
+                background-color: blue;
+                height: 700px;
+            }
+            30%{
+                background-color: purple;
+            }
+            31%{
+                background-color: purple;
+                height: 200px;
+            }
+            40%{
+                background-color: orange;
+            }
+            50%{
+                background-color: pink;
+            }
+            60%{
+                background-color: greenyellow;
+            }
+            70%{
+                background-color: gold;
+            }
+            80%{
+                background-color: rebeccapurple;
+            }
+            100%{
+                background-color: tomato;
+            }
+        }
+        @keyframes animation1 {
+            0%{
+                background-color: red;
+            }
+            10%{
+                background-color: green;
+            }
+            11%{
+                height: 900px;
+                background-color: green;
+            }
+            20%{
+                background-color: blue;
+            }
+            30%{
+                background-color: purple;
+            }
+            40%{
+                background-color: orange;
+            }
+            50%{
+                background-color: pink;
+            }
+            60%{
+                background-color: greenyellow;
+            }
+            70%{
+                background-color: gold;
+            }
+            80%{
+                background-color: rebeccapurple;
+            }
+            100%{
+                background-color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ircle">
+
+    </div>
+
+    <div class="otater">
+<div class="ing">
+
+</div>
+<!-- <span>loading...</span> -->
+    </div>
+    <div class="disco">
+
+    </div>
+    <div class="disco1">
+
+    </div>
+    <div class="disco">
+
+    </div>
+    <div class="disco1">
+
+    </div>
+    <div class="disco">
+
+    </div>
+    <div class="disco1">
+
+    </div>
+    <div class="disco">
+
+    </div>
+   
+</body>
+</html>

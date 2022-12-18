@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="STYLES.CSS">
+</head>
+<body>
+  <div class="mainsection">
+    <div class="editor">
+      <p></p>
+      <h1 >Code Editor</h1>
+      <p>Note:This editor for html and css only  no java script will work</p>
+      <h1 style="color: skyblue;">HTML</h1>
+      <div class="text">
+        <h1><font color="skyblue">Font colors</font></h1>
+        <button id="green" class="colorchange" onclick="green()" ></button>
+      <button id="blue" class="colorchange"  onclick="blue()"></button>
+      <button id="red" class="colorchange" onclick="red()"></button>
+      <button id="orange" class="colorchange" onclick="orange()"></button>
+      <button id="black" class="colorchange" onclick="purple()"></button>
+      <button id="darkgreen" class="colorchange" onclick="darkgreen()"></button>
+      <button id="skyblue" class="colorchange" onclick="skyblue()"></button>
+      <button id="vilot" class="colorchange" onclick="vilot()"></button>
+      <button id="crimson" class="colorchange" onclick="crimson()"></button>
+      <button id="yellow" class="colorchange" onclick="yellow()"></button>
+      <button id="salmon" class="colorchange" onclick="salmon()"></button>
+      <button id="teal" class="colorchange" onclick="teal()"></button>
+      
+      
+      
+      
+      </div>
+
+      
+     
+      
+      <p>&DownArrow; enter your code below &DownArrow; </p>
+      <textarea  rows="30000" cols="3000" id="htmlcode" class="box" spellcheck="false" >
+      </textarea> 
+      
+      
+      <h1 style="color: skyblue;">Output:</h1>
+      <iframe  id="output" class="box" style="overflow: hidden;"></iframe>
+      <br>
+      <br>
+    </div>
+  </div>
+</body>
+<script>
+    function run(){
+        let htmlcode = document.querySelector(".editor .box").value;
+       
+        let output = document.querySelector(".editor #output");
+        // console.log(htmlcode,csscode,jscode,output);
+        output.contentDocument.body.innerHTML = htmlcode;
+        output.contentWindow.eval(jscode);
+    }
+    document.querySelector(".editor .box").addEventListener("keyup",run);
+    
+</script>
+<script src="color.js"></script>
+</html>

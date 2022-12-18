@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 100px auto;
+            animation: box 1ms infinite linear ease;
+            border-radius: 10%;
+            transition: width 2s,height 2s,background 20s,border-radius 2s;
+        }
+        #cc{
+            background-color: #000;
+            accent-color: blue;
+        }
+       div:hover{
+        height: 500px;
+        width: 500px;
+        background: green;
+        border-radius: 50%;
+        content: "box";
+        color: #000;
+        text-align: center;
+       
+       }
+       @keyframes box{
+        0%{
+            background-color: blue;
+        }
+        50%{
+            background-color: purple;
+        }
+        100%{
+            background-color: black;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <div onmouseenter="bg()" id="box">
+
+    </div>
+    <input type="radio" name="" id="cc">
+    <button class="body">color</button>
+</body>
+<script>
+    function bg(){
+        document.getElementById("box")
+        }
+</script>
+</html>

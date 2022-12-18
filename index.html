@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="STYLES.css">
+    <style>
+        
+       
+        .mainsection h1 {
+             text-decoration:  1px underline;
+        }
+        .mainsection p{
+         text-decoration: 1px underline;
+        }
+        .buttons{
+            height: 100px;
+            width: 230px;
+            background-repeat: no-repeat;
+            border: 2px solid green;
+            background-color: rgb(27, 25, 25);
+            box-shadow: 0 0 120px rgba(55, 211, 24, 0.5),
+            0 0 20px rgba(0,225,0,0.4),
+            0 0 30px rgba(55, 211, 24, 0.6),
+            0 0 40px rgba(55, 211, 24, 0.8),
+            0 0 50px rgba(55, 211, 24, 1)
+             ;
+             color: green;
+             border-radius: 10px;
+             transform-style: preserve-3d;
+             transition: all 0.5s;
+             
+        }
+        .buttons:hover{
+            width: 300px;
+            cursor: pointer;
+            
+            
+        }
+       
+        .languages p{
+            text-decoration: none;
+        }
+        .button:hover{
+             width: 300px;
+            cursor: pointer;
+        }
+        .button{
+                 height: 50px;
+            width: 200px;
+            border: 2px solid green;
+            background-color: rgb(27, 25, 25);
+            box-shadow: 0 0 120px rgba(55, 211, 24, 0.5),
+            0 0 20px rgba(0,225,0,0.4),
+            0 0 30px rgba(55, 211, 24, 0.6),
+            0 0 40px rgba(55, 211, 24, 0.8),
+            0 0 50px rgba(55, 211, 24, 1)
+             ;
+             color: green;
+             border-radius: 10px;
+             transform-style: preserve-3d;
+        }
+       #logo{
+        width: 390px;
+        height: 700px;
+        
+        object-fit: cover;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="mainsection">
+        <h1>welcome to op coding</h1>
+       <video src="logo111.mp4" id="logo" autoplay  muted ></video>
+    
+     <!-- <img src="HTML1.png" alt="" srcset="" id="logo" > -->
+        <br>
+        <br>
+        <h1>select your coding language below.</h1>
+        <br>
+        <h1 id="heading"></h1>
+        <h1>languages</h1>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <div class="languages">
+            <a href="html.html">
+                <button class="buttons" onmouseenter="change()" onmouseleave="normal()">
+                    <h1>HTML</h1>
+                     <p id="full">hyper text markup language</p>
+                    </button>
+                </a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <a href="css.html"><button class="buttons" onmouseenter="change1()" onmouseleave="normal1()">
+                    <h1>CSS</h1>
+                    <p id="full1">cascading style sheets</p>
+                </button></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="js.html"><button class="buttons" onmouseenter="change2()" onmouseleave="normal2()">
+                        <h1>JS</h1>
+                        <p id="full2">javascript</p>
+                    </button></a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="php.html"><button class="buttons" onmouseenter="change3()" onmouseleave="normal3()"><h1>PHP</h1>
+                    <p id="full3">hypertext pre processor</p></button></a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="mailto:sarath0980@gmail.com">contact us</a> <br> <br>
+                    <a href="http://">our youtube channel</a><br> <br>
+                    <a href="http://">our face book</a> <br>
+                    <br>
+            </div>
+    </div>
+    <div class="test"></div>
+</body>
+<script src="script.js"></script>
+</html>
